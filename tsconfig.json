@@ -36,9 +36,10 @@
       "@/reactapp/utils/*": ["src/utils/*"],
       "@/reactapp/services/*": ["src/services/*"],
       "@/reactapp/types/*": ["src/types/*"],
+      "@/reactapp/styled/*": ["src/styled/*"],
       "@/shared/*": ["shared/*"]
     }
   },
-  "include": ["src", "electron", "shared"],
+  "include": ["src", "electron", "shared", "styled-system"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

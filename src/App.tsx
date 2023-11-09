@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 
 import '@/reactapp/utils/colors';
 
 import activeWindow from '@/reactapp/services/activeWindow';
 import { Doughnut, Stacked } from '@/reactapp/components/charts';
+import { Main } from '@/reactapp/components/layout';
 import { getFormattedTime } from '@/reactapp/utils/time';
 
 import { ActiveWindow } from '@/shared/types/activeWindow';
@@ -24,8 +24,7 @@ function App() {
   }, []);
 
   return (
-    <main>
-      <h1>Active Window</h1>
+    <Main>
       <h2>Total: {formattedTotal}</h2>
       <Doughnut
         data={activeWindow.groupBy(count, {
@@ -39,7 +38,7 @@ function App() {
           consecutive: true,
         })}
       ></Stacked>
-    </main>
+    </Main>
   );
 }
 

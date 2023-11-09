@@ -1,0 +1,29 @@
+@layer tokens {
+    :where(:root, :host) {
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-huge: 64px;
+  --sizes-xxs: 8px;
+  --sizes-xs: 16px;
+  --sizes-sm: 24px;
+  --sizes-md: 32px;
+  --sizes-lg: 48px;
+  --sizes-xl: 64px;
+  --sizes-breakpoint-sm: 640px;
+  --sizes-breakpoint-md: 768px;
+  --sizes-breakpoint-lg: 1024px;
+  --sizes-breakpoint-xl: 1280px;
+  --sizes-breakpoint-2xl: 1536px;
+  --breakpoints-sm: 640px;
+  --breakpoints-md: 768px;
+  --breakpoints-lg: 1024px;
+  --breakpoints-xl: 1280px;
+  --breakpoints-2xl: 1536px
+}
+  }
+  

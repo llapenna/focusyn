@@ -10,7 +10,7 @@
     "package": "npm run build && electron-builder",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "husky install",
+    "prepare": "husky install && panda codegen",
     "release": "dotenv release-it",
     "release:ci": "dotenv release-it --ci"
   },
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
+    "@pandacss/dev": "^0.18.0",
     "@release-it/conventional-changelog": "7.0.0",
     "@types/lodash-es": "^4.17.10",
     "@types/react": "^18.2.15",
